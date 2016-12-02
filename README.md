@@ -20,7 +20,7 @@ Usefull links and similar projects:
 ![Alt text](img/WebCoffee_controller.png?raw=true "Microcontroller design")
 
 ## Meassuring the temperature
-As a first step I wanted to find out, how good or bad the built-in thermostat in the Rancilio Silvia does its job. So I just put a temperature sensor on the boiler, wrote some simple code to read the temperature from the DS18B20 temp. sensor and publish it as a json REST call on a simple HTTP web server on the ESP8266.For the client I wrote a simple shell script, that regularly polls the web-server and writes the temperature to a log file on my Mac.
+As a first step I wanted to find out, how good or bad the built-in thermostat in the Rancilio Silvia does its job. So I just put a temperature sensor on the boiler and wrote some code to read the temperature from the DS18B20 temp. sensor on the ESP8266. The temperature is publish it as a REST service (JSON) on a simple HTTP web server on the ESP8266. For the client I wrote a shell script that regularly polls the web server and writes the temperature to a log file.
 
 Here is the resulting graph:
 ![Alt text](img/ranc_silvia_temp_curve.png?raw=true "Rancilio Silvia Temperature Curve")
